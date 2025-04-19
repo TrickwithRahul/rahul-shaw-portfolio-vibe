@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,7 +13,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
+    --primary: 45 100% 62%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -40,16 +40,24 @@
   .section-padding {
     @apply py-20 px-6 lg:px-24;
   }
-
-  .reveal {
-    @apply opacity-0 transition-all duration-1000 ease-in-out;
-  }
-
-  .reveal.active {
-    @apply opacity-100 translate-y-0;
-  }
 }
 
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80;
+}
+
+.wave-bottom {
+  position: relative;
+}
+
+.wave-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: hsl(var(--primary));
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
 }
