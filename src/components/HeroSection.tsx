@@ -41,12 +41,22 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="relative hidden md:block">
-          <div className="absolute inset-0 bg-[#FFD84F] rounded-full blur-3xl opacity-20" />
-          <div className="relative aspect-square overflow-hidden rounded-full border-4 border-[#FFD84F]">
+          <div className="absolute inset-0 bg-[#FFD84F] rounded-full blur-[80px] opacity-30" />
+          <div 
+            className="relative aspect-square overflow-hidden rounded-full border-4 border-[#FFD84F]"
+            style={{
+              boxShadow: `
+                0 0 60px rgba(255, 216, 79, 0.3),
+                0 0 100px rgba(255, 216, 79, 0.2),
+                -10px 10px 30px rgba(0, 0, 0, 0.2)
+              `,
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#FFD84F]/10 to-transparent" />
             <img
               src="/lovable-uploads/88554165-fe93-4d57-bb4a-2bdefae3e014.png"
               alt="Rahul Shaw"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>
