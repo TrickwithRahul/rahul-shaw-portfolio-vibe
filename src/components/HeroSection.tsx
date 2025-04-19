@@ -42,8 +42,12 @@ export const HeroSection = () => {
         </div>
         <div className="relative hidden md:block">
           <div className="absolute inset-0 bg-[#FFD84F] rounded-full blur-3xl opacity-20" />
-          <div className="relative aspect-square rounded-full bg-[#FFD84F]/10 border-2 border-[#FFD84F] flex items-center justify-center">
-            <span className="text-6xl">👨‍💻</span>
+          <div className="relative aspect-square overflow-hidden rounded-full border-4 border-[#FFD84F]">
+            <img
+              src="/lovable-uploads/88554165-fe93-4d57-bb4a-2bdefae3e014.png"
+              alt="Rahul Shaw"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
